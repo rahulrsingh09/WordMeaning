@@ -50,7 +50,7 @@
 		          dataType: 'json',
 		          success: function(data) {
 				  $('main #result').remove();
-				  	$.each(data.list, function(index) {
+				  $.each(data.list, function(index) {
 				$('main').append('<div id = "dap_div"><li>' + 'Word :&nbsp;'+ data.list[index].word +'&nbsp' +'</li><li>Meaning : &nbsp'+data.list[index].definition+'&nbsp;</li></div>'); 
 				});
 			},
