@@ -5,7 +5,6 @@
 				
 				
 				$(".dap_button_bookmark").click(function(){//used for bookmarking word and also increasing the count 
-				globalVar = $(".dap_text_box").val();
 					//$('h3').empty();
 					if(globalVar != ''){
 					$('#add').append('<li>' + globalVar+'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;X<li>');
@@ -48,10 +47,11 @@
 		          url: 'https://mashape-community-urban-dictionary.p.mashape.com/define?term='+text,
 		          type: 'GET',
 		          dataType: 'json',
+				  crossDomain: true,
 		          success: function(data) {
 				  $('main #result').remove();
-				  $.each(data.list, function(index) {
-				$('main').append('<div id = "dap_div"><li>' + 'Word :&nbsp;'+ data.list[index].word +'&nbsp' +'</li><li>Meaning : &nbsp'+data.list[index].definition+'&nbsp;</li></div>'); 
+				  	$.each(data.list, function(index) {
+					$('main').append('<div id = "dap_div"><li>' + 'Word :&nbsp;'+ data.list[index].word +'&nbsp' +'</li><li>Meaning : &nbsp'+data.list[index].definition+'&nbsp;</li></div>'); 
 				});
 			},
 
