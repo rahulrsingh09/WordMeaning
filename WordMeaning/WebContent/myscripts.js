@@ -47,7 +47,7 @@
 		          url: 'https://mashape-community-urban-dictionary.p.mashape.com/define?term='+text,
 		          type: 'GET',
 		          dataType: 'json',
-				  crossDomain: true,
+				  crossDomain: true, // added cross domain attr
 		          success: function(data) {
 				  $('main #result').remove();
 				  	$.each(data.list, function(index) {
