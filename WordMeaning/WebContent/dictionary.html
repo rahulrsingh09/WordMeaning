@@ -1,51 +1,60 @@
-
 	<!DOCTYPE html>
-	<!-- Template by quackit.com -->
 	<html>
-		<head>
-			<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-			<title>Dictionary</title>
-			
-			<link rel="stylesheet" href="style.css">
-			 <script src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
-			<script src="myscripts.js"></script>
-		</head>
-		
-		
-		<body>		
-
-			<header>
-				<div class="innertube">
-					<h1>WORD MEANINGS</h1>
+	 
+	<head>
+	 
+	                <meta charset="utf-8">
+	                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	                <meta name="viewport" content="width=device-width, initial-scale=1">
+	 
+	                <title>Basic Form</title>
+	 
+	                <link rel="stylesheet" href="demo.css">
+	                <link rel="stylesheet" href="form-basic.css">
+	                <script src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
+	                <script type="text/javascript" src="dicscripts.js"></script>               
+	               
+	 
+	</head>
+	 
+	 
+	<header>
+		<h1>Word Meanings</h1>
+	</header>
+ 
+	<div class="main-content">
+ 
+		<!-- You only need this form and the form-basic.css -->
+ 
+		<form class="form-basic">
+ 
+ 
+			<div class="form-row">
+				<div style="border: solid 2px steelblue;padding:10px;float:right;top:0;right:0">
+						<p id = "bhead">Bookmark</p>
+						<hr/>
+						<br/>
+				<div id = "bmark"></div>
 				</div>
-			</header>
-			
-			<div id="wrapper">
-			
-				<main>
-					<input type = "text" class = "dap_text_box"></input>
-					<button type="submit" class = "dap_button"> Search</button>
-					<button type="submit" class = "dap_button_bookmark"> Bookmark me!!</button>
-				</main>
-				
-				
-				<nav>
-					<div class="innertube">
-						<h3>Bookmarks</h3>
-						  <ul id = "add" >
-							
-						  </ul>
-						  </div>
-				</nav>
-			
-			</div>
 
+			<div style="overflow: hidden; padding-right: .5em; padding-bottom: 10px;">
+				<input type="text" style="width: 60%;" id = "input" placeholder = "Word you want to Search the Meaning For ?"/>
+			</div>​
+
+		<div>
+			<input type="submit" value="Find" style="float: left;width:auto" id = "btnSubmit" />&nbsp;&nbsp;
+			<input type="submit"value="Bookmark" style="width:auto" id = "bookmark"/>
 			
-			<footer>
-				<div class="innertube">
-					<p>My Dictionary</p>
-				</div>
-			</footer>
-		
-		</body>
+		</div>
+
+		</div>
+		<div class="form-row" id = "add"></div>
+	       </form>
+	 
+</div>
+	 
+	 
+	</body>
+	 
 	</html>
+	 
