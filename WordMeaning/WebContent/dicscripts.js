@@ -56,6 +56,9 @@
 		          success: function(data) {
 					$('#result').remove(); 
 				  	$.each(data.list, function(index) {
+						if(data.list[0] == undefined){
+							$('#add').append('<div style="margin:5px; max-width:600px; border: solid 2px steelblue;padding:10px; display: block" id = "wordmeaning">Sorry NO Valid Meaning Found</div>');		
+						}
 					$('#add').append('<div style="margin:5px; max-width:600px; border: solid 2px steelblue;padding:10px; display: block" id = "wordmeaning"><li>Word:&nbsp;&nbsp;&nbsp;'+data.list[index].word+'</li><li>Meaning:&nbsp;&nbsp;&nbsp;'+data.list[index].definition+'</li></div>'); 
 					});
 				},
