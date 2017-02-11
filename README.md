@@ -9,5 +9,5 @@ the dicitonary gives the meaning in json format which is parsed by jquery ajax c
 the next version of this web meaning page will be a Responsive design page presenly i have not incorporated responsive design to this page.
 
 
-To Run this project just pull the contents from Github into eclipseor download just the html css and js files from git 
+To Run this project just pull the contents from Github into eclipse or download just the html css and js files from git 
 and paste it in a folder and run .
